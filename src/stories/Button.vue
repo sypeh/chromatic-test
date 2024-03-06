@@ -38,7 +38,8 @@ const classes = computed(() => ({
 }));
 
 const style = computed(() => ({
-  backgroundColor: props.backgroundColor
+  backgroundColor: props.backgroundColor,
+  borderRadius: '1px !important'
 }));
 
 const onClick = () => {
