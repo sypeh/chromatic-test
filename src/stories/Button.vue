@@ -1,5 +1,5 @@
 <template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }} </button>
+  <button type="button" :class="classes" @click="onClick" :style="style" style="border-radius: none">{{ label }} </button>
 </template>
 
 <script lang="ts" setup>
@@ -38,7 +38,8 @@ const classes = computed(() => ({
 }));
 
 const style = computed(() => ({
-  backgroundColor: props.backgroundColor
+  backgroundColor: props.backgroundColor,
+  borderRadius: '1px !important'
 }));
 
 const onClick = () => {
